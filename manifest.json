@@ -1,0 +1,20 @@
+{
+    "manifest_version": 2,
+    "name": "Trello Card Title Hyperlinks",
+    "version": "1.0",
+
+    "description": "Adds hyperlinks to trello card titles",
+
+    "icons": {
+        "48": "icons/icon.svg",
+        "96": "icons/icon.svg"
+    },
+
+    "content_scripts": [
+        {
+            "matches": ["*://trello.com/*"],
+            "js": ["main.js"],
+            "css": ["style.css"]
+        }
+    ]
+}
